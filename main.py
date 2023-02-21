@@ -19,7 +19,7 @@ class Asiento:
         def cambiarRegistro(self, registro):
             self.registro=registro
         
-        def AsiganrTipo(self, tipo):
+        def asignarTipo(self, tipo):
             if (tipo=="electrico" or tipo=="gasolina"):
                 self.tipo=tipo
 
@@ -40,7 +40,7 @@ class Auto:
                 lAsientos +=1
         return lAsientos
 
-    def verificarIntegridad(Self):
+    def verificarIntegridad(self):
         if (self.registro==self.motor.registro):
             for asiento in self.asientos:
                 if (type(asiento) ==Asiento):
