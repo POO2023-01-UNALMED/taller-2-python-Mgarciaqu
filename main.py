@@ -9,7 +9,7 @@ class Asiento:
         if (color == "rojo" or color =="verde" or color == "amarillo" or color =="negro" or color == "blanco"):
             self.color=color
 
-    class Motor:
+class Motor:
 
         def _init_(self, numeroCilindros, tipo, registro):
             self.numeroCilindros=numeroCilindros
