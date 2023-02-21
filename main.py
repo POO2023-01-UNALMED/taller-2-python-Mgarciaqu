@@ -24,14 +24,14 @@ class Asiento:
                 self.tipo=tipo
 
 class Auto:
-    hechos=0
+    hechos = 0
     def _init_(self, modelo, precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
         self.asientos=asientos
         self.marca=marca
         self.motor=motor
-        self.registro==registro
+        self.registro=registro
 
     def cantidadAsientos(self):
         lAsientos=0
@@ -41,7 +41,7 @@ class Auto:
         return lAsientos
 
     def verificarIntegridad(self):
-        if (self.registro==self.motor.registro):
+        if (self.registro == self.motor.registro):
             for asiento in self.asientos:
                 if (type(asiento) ==Asiento):
                     if asiento.registro !=self.registro:
