@@ -24,7 +24,7 @@ class Asiento:
                 self.tipo=tipo
 
 class Auto:
-    hechos = 0
+    cantidadCreados = 0
     def _init_(self, modelo, precio,asientos,marca,motor,registro):
         self.modelo=modelo
         self.precio=precio
@@ -44,7 +44,7 @@ class Auto:
         if (self.registro == self.motor.registro):
             for asiento in self.asientos:
                 if (type(asiento) ==Asiento):
-                    if asiento.registro !=self.registro:
+                    if asiento.registro != self.registro:
                         return "Las piezas no son originales"
             return "Auto original"
         else:
